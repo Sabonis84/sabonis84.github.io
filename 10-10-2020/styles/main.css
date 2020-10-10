@@ -1,0 +1,11 @@
+.main{
+    width: 400px;
+    height: 300px;
+    border: 2px;
+    background: linear-gradient(to bottom, blue, yellow);
+    position: absolute;
+    margin: 200px 500px;
+    
+
+}
+

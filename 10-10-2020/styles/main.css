@@ -1,11 +1,11 @@
-.main{
-    width: 400px;
-    height: 300px;
-    border: 2px;
-    background: linear-gradient(to bottom, blue, yellow);
-    position: absolute;
-    margin: 200px 500px;
-    
-
+button {
+    width: 200px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: green;
 }
 
+button:nth-child(2n){
+    background-color: red;
+}

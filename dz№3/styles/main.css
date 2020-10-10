@@ -1,0 +1,15 @@
+button {
+    width: 120px;
+    height: 45px;  
+    margin: 25px 0px 0px 50px;
+    border: 2px solid none;
+    border-radius: 15px;
+    color:black;
+    box-shadow: 3px 3px 10px 5px blue;
+    background: linear-gradient(to right, red, yellow)
+    
+    
+}
+button:active {
+    background: linear-gradient(to right, blue, green)
+}

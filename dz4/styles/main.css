@@ -9,8 +9,8 @@
             display: block;
             width: 80%;
             height: 0;
-            border-left: 50px solid transparent;
-            border-right: 50px solid transparent;
+            border-left: 75px solid transparent;
+            border-right: 75px solid transparent;
             border-bottom: 100px solid green;
 
             }
@@ -19,92 +19,43 @@
             display: block;
             width: 80%;
             height: 0;
-            border-left: 50px solid transparent;
-            border-right: 50px solid transparent;
+            border-left: 75px solid transparent;
+            border-right: 75px solid transparent;
             border-top: 100px solid green;
         }
    
         div:nth-child(2)::before {   
-    
-        
-            content: "";
-            display: block;
-            width: 80%;
-            height: 0;
-            border-left: 50px solid transparent;
-            border-right: 50px solid transparent;
             border-bottom: 100px solid red;
 
     }
         div:nth-child(2)::after {
-            content: "";
-            display: block;
-            width: 80%;
-            height: 0;
-            border-left: 50px solid transparent;
-            border-right: 50px solid transparent;
             border-top: 100px solid red;
         }
         div:nth-child(3)::before {   
-            
-            content: "";
-            display: block;
-            width: 80%;
-            height: 0;
-            border-left: 50px solid transparent;
-            border-right: 50px solid transparent;
             border-bottom: 100px solid blue;
 
         }
         div:nth-child(3)::after {
-            content: "";
-            display: block;
-            width: 80%;
-            height: 0;
-            border-left: 50px solid transparent;
-            border-right: 50px solid transparent;
             border-top: 100px solid blue;
         }
         div:nth-child(4)::before {   
-            
-            content: "";
-            display: block;
-            width: 80%;
-            height: 0;
-            border-left: 50px solid transparent;
-            border-right: 50px solid transparent;
             border-bottom: 100px solid yellow;
 
         }
         div:nth-child(4)::after {
-            content: "";
-            display: block;
-            width: 80%;
-            height: 0;
-            border-left: 50px solid transparent;
-            border-right: 50px solid transparent;
             border-top: 100px solid yellow;
         }
         div:nth-child(5)::before {   
-            
-            content: "";
-            display: block;
-            width: 80%;
-            height: 0;
-            border-left: 50px solid transparent;
-            border-right: 50px solid transparent;
             border-bottom: 100px solid aqua;
 
         }
         div:nth-child(5)::after {
-            content: "";
-            display: block;
-            width: 80%;
-            height: 0;
-            border-left: 50px solid transparent;
-            border-right: 50px solid transparent;
             border-top: 100px solid aqua;
         }
+
+
+      
+
 
 
 

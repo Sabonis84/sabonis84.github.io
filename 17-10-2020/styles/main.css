@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+body {
+    background-color: #266b97;
 
+}
 .main {
     position: relative;
     background-color: #b9d6ef;
@@ -35,14 +40,13 @@
     position: absolute;
     font-size: 4.2rem;
     line-height: 44px;
-    left:55px;
+    left: 61px;
     letter-spacing: 3px;
     color:white;
     text-shadow: 2px 4px 0 rgba(0, 0, 0, 0.17);
 }
 .subscribe {
     position: relative;
-    /* border: 1px solid red; */
     margin: 0 auto;
     height: 34px;
     width: 600px;
@@ -50,6 +54,7 @@
 }
 .subscribe > div {
     position: absolute;
+    margin-top: 7px;
     left: 103px;
     color: #266b97;
     width: 400px;
@@ -63,60 +68,54 @@
     line-height: 16px;
     text-align: center;
     text-transform: uppercase;
-    /* font-style: normal;
-    letter-spacing: normal;
-    line-height: normal; */
-
+    
 }
 
 .form {
     position: relative;
-    height: 43px;
+    margin: 0 auto;
+    height: 45px;
     width: 600px;
     margin: 0 auto;
+  
     
 }
-.form > div {
+
+.maininput {
     position: absolute;
-}
-.inputfield {
-    position: absolute;
-    width: 240px;
-    height: 37px;
+    width: 235px;
+    height: 33px;
     box-shadow: 0 1px 0 #ffffff, inset 0 2px 5px rgba(29, 26, 22, 0.2), inset 0 0 2px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
-    left: 132px;
-}
-
-
-input {
-   
-    width: 129px;
-    height: 12px;
-    color: #808080;
-    font-family: "Arial MT";
-    font-size: 12px;
-    font-weight: 400;
-    /* font-style: normal;
-    letter-spacing: normal;
-    line-height: 25px; */
-    /* text-align: left; */
-    left: 133px;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
+    left: 134px;
     outline:none;
     border: none;
-       
+    margin-top: 9px;
+
 }
-a.button {
+
+.maininput::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #808080;
+    padding-left: 11px;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 25px;
+
+}
+      
+
+.megabutton {
     position: absolute;
     border-radius: 4px;
-    width: 90px;
+    width: 92px;
     height: 36px;
+    margin-top: 9px;
     border: 1px solid #e68e16;
     background-color: #fab937;
-    left: 384px;
+    left: 386px;
     text-shadow: 0 1px 1px rgba(29, 26, 22, 0.2);
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
@@ -128,38 +127,43 @@ a.button {
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+    outline:none;
     
 }
 .futer {
     position: relative;
     margin: 0 auto;
     background-color: #266b97;
-    /* position: absolute; */
     width: 100%;
-    height: 1000px;
+    height: 100%;
     
 
+}
+.iceberg {
+    margin: 0 auto;
+    position: relative;
+    width: 600px;
+    height: 48px;
+    
 }
 .ice {
    
     position: absolute;
-    margin-top: -193px;
+    margin-top: -198px;
     width: 100%;
-    left: 326px;
-    
-    
-    
+    left: 143px;
+       
 }
 .ship {
     position: absolute;
-    left: 301px;
-    margin-top: -29px;
+    left: 118px;
+    margin-top: -26px;
 }
 .firsthorizont{
     position: relative;
-    margin-top: 200px;
+    margin-top: 211px;
     width: 100%;
-    height: 6px;
+    height: 4px;
     background-color: #ddecfa;
 
 }
@@ -168,81 +172,61 @@ a.button {
     height: 9px;
     background-color: #327dad;
 }
-
-.elipses1 {
+.elipses {
+    margin: 0 auto;
+    position: relative;
+    height: 100px;
+    width: 350px;
     
+
+}
+.days {
+    position: absolute;
+    height: 16px;
+    width: 75px;
+    left: 38px;
+    z-index: 5;
+    bottom: 0;
+    color:  #f3f3f3;
+    font-family: "Houschka Pro";
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 16px;
+    text-align: left;
+    text-transform: uppercase;
+    
+
+}
+.elipse1 {
     position: absolute;
     border-radius: 50%;
+    margin-top: -97px;
     width: 70px;
     height: 70px;
     background-color: #b9d6ef;
-    left: 344px;
-    margin-top: 62px;
-    z-index: 1;
-      
-}
-.number1 {
-    margin-top: 20px;
-    left: 15px;
-    position: absolute;
-    width: 39px;
-    height: 17px;
+    left: -4px;
+    line-height: 75px;
+    z-index: 2;
     color: #266b97;
-    font-family: "Houschka Pro";
+    font-family: 'Nunito', sans-serif;
     font-size: 24px;
     font-weight: 500;
     text-align: center;
     font-style: normal;
     letter-spacing: normal;
-    line-height: normal
-}
-
-.elipses2 {
-    position: absolute;
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    background-color: #b9d6ef;
-    left: 456px;
-    margin-top: 60px;
-    z-index: 1;
-}
-
-.elipses3 {
-    position: absolute;
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    background-color: #b9d6ef;
-    left: 565px;
-    margin-top: 61px;
-    z-index: 1; 
-}
-.days {
-    width: 60px;
-    height: 17px;
-    color: #f3f3f3;
-    position: absolute;
-    left: 348px;
-    margin-top: 140px;
-    z-index: 1;
-    font-family: "Houschka Pro";
-    font-size: 24px;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 16px;
-    text-align: left;
-    text-transform: uppercase;
+    
+    
 }
 .hours {
-    width: 83px;
-    height: 17px;
-    color: #f3f3f3;
     position: absolute;
-    left: 448px;
-    margin-top: 140px;
-    z-index: 1;
+    height: 16px;
+    width: 75px;
+    left: 139px;
+    z-index: 5;
+    bottom: 0;
+    color:  #f3f3f3;
     font-family: "Houschka Pro";
     font-size: 24px;
     font-weight: 700;
@@ -251,30 +235,58 @@ a.button {
     line-height: 16px;
     text-align: left;
     text-transform: uppercase;
-
+}
+.elipse2 {
+    position: absolute;
+    border-radius: 50%;
+    margin-top: -97px;
+    width: 70px;
+    height: 70px;
+    background-color: #b9d6ef;
+    left: 9px;
+    line-height: 75px;
+    z-index: 2;
+    color: #266b97;
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: normal;
 }
 .mins {
-    width: 60px;
-    height: 17px;
-    color: #f3f3f3;
     position: absolute;
-    left: 570px;
-    margin-top: 140px;
-    z-index: 1;
+    height: 16px;
+    width: 75px;
+    left: 260px;
+    z-index: 5;
+    bottom: 0;
+    color:  #f3f3f3;
     font-family: "Houschka Pro";
-    font-size: 24px;
+    font-size: 23px;
     font-weight: 700;
     font-style: normal;
     letter-spacing: normal;
     line-height: 16px;
     text-align: left;
     text-transform: uppercase;
-
 }
-/* .iceberg {
+.elipse3 {
     position: absolute;
-    margin: 0 auto;
-    width: 600px;
-    height: 300px;
-    border: 2px solid black;
-} */
+    border-radius: 50%;
+    margin-top: -97px;
+    width: 70px;
+    height: 70px;
+    background-color: #b9d6ef;
+    left: -4px;
+    line-height: 75px;
+    z-index: 2;
+    color: #266b97;
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: normal;
+}
+

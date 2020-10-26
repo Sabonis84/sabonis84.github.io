@@ -28,11 +28,12 @@
 }
 
 .item:hover {
-    display: block;   
+   
     margin-top: -10px;
     background: content-box radial-gradient(crimson, skyblue);
     color: transparent;
     z-index: 5;
+    opacity: 0;
        
 }
 

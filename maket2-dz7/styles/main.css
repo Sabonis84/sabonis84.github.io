@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'Google Sans' ;
+    src: url(../fonts/GoogleSans-Bold.woff);
+}
+@font-face {
+    font-family: 'Proxima Nova Thin';
+    src: url(..//fonts/ProximaNovaCond-Thin.woff)
+}
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url(..//fonts/ProximaNova-Bold.ttf);
+}
+@font-face {
+    font-family: 'Proxima Nova Semibold';
+    src: url(..//fonts/ProximaNovaExCn-Semibold.woff);
+}
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url(../fonts/GothamPro-Bold.woff);
+}
+
+body {
+    background: #E5E5E5;
+}
+
+
+.header {
+    /* border: 2px solid red; */
+    position: relative;
+    /* margin: 0 auto; */
+    width: 1920px;
+    height: 1005.5px;
+    background: url(../images/back1.png) no-repeat;
+}
+.back2 {
+    width: 1920px;
+    height: 1005.5px;
+    position: absolute;
+    background: url(../images/back2.png) no-repeat;
+    opacity: 0.9;
+}
+
+.headerinfo {
+    position: relative;
+    margin: 0 auto;
+    width: 1250px;
+    height: 34px;
+    border: 1px solid #000;
+}
+.left_h {
+    position: absolute ;
+    width: 200px;
+    height: 25px;
+    border: 1px solid #000;
+    
+}
+    .left_h .date, .time {
+        position: absolute ;
+        width: 100px;
+        height: 10px;
+        font-family: 'Proxima Nova Thin';
+        font-size: 14px;
+        letter-spacing: 1.3px;
+        line-height: 17px;
+        left: 54px;
+        margin-top: 7px;
+        color: #FFFFFF;
+    }
+    .time{
+        left: 136px;
+        margin-top: 7px;
+        font-family: 'Proxima Nova Bold';
+    }
+    .money {
+        position: absolute;
+        width: 474px;
+        height: 28px;
+        border: 1px solid #000;
+        left:223px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        line-height: 32px;
+        letter-spacing: 1.3px;
+        color: #FFFFFF;
+        font-family: 'Proxima Nova Regular';
+        text-transform: uppercase;        
+    }
+    .bitcoin {
+        font-family: 'Proxima Nova Bold';
+    }
+
+    .lang {
+        position: absolute;
+        width: 200px;
+        height: 20px;
+        right: 20px;
+    }
+    .ru,.en,.zh {
+        position: absolute;
+        margin-top: 3px;
+        width: 26px;
+        height: 10px;
+        top: 8px;
+        left: 90px;
+        font-family: 'Proxima Nova Bold';
+        font-size: 14px;
+        line-height: 11px;
+        letter-spacing: 2.3px;
+        border-right: 1px solid white;
+
+        color: #FFFFFF;
+
+    }
+    .en {
+        left: 125px;
+    }
+    .zh {
+        left: 162px;
+        border-right: 0;
+    }
+    .header_nav {
+        position: relative;
+        margin: 0 auto;
+        width: 1300px;
+        height: 100px;
+        border: 1px solid black;
+        
+    }
+    .logo {
+        position: absolute;
+        top:23px;
+        left: 77px;
+        width: 41px;
+        height: 41px;
+        border-radius: 5px;        
+        background: white;
+        
+    }
+    .sigma {
+        position: absolute;
+        top: 31px;
+        left: 90px;
+        width: 18.28px;
+        height: 22.4px;
+        background: url(..//images/sigma.png) no-repeat;
+    }
+    .pool {
+    position: absolute;
+    border: 1px solid black;
+    width: 143px;
+    height: 23px;
+    font-size: 21px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    font-family: 'Gotham Pro';
+    color: #FFFFFF;
+    top:30px;
+    left:131px;
+    }
+    .button1 {
+    position: absolute;
+    width: 105px;
+    height: 33px;
+    border: 1px solid white;
+    left: 336px;
+    top: 27px;
+    border-radius: 5px;
+
+    }
+    .bit {
+        position: absolute;
+        background: url(..//images/bitcoin.png) no-repeat;
+        top: 8px;
+        left: 17px;
+        width: 16px;
+        height: 16px;
+        
+    }
+    .BTC {
+        position: absolute;
+        left: 27px;
+        width: 61px;
+        height: 35px; 
+        font-family: 'Proxima Nova Bold';
+        font-size: 14px;  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:white;
+        
+
+
+    }
+    .triangle {
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .main  {
+    position: absolute;
+    Width: 511px;
+    Height: 107px;
+    background-color: #32228A;
+    color: #FFFFFF;
+    font-family: Google Sans;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    top: 0px;
+    left: 0px;
+} */

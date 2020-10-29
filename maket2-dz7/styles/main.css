@@ -28,23 +28,26 @@
 
 body {
     background: #E5E5E5;
+    background-size: 100%;
 }
 
 
 .header {
+   
   
     position: relative;
-    width: 1920px;
+    /* width: 1920px; */
     height: 1005.5px;
     background: url(../images/back.png) no-repeat;
+    background-size: 100%;
 }
-.back2 {
+/* .back2 {
     width: 1920px;
     height: 1005.5px;
     position: absolute;
     background: url(../images/back2.png) no-repeat;
     opacity: 0.9;
-}
+} */
 
 .headerinfo {
     position: relative;
@@ -81,7 +84,7 @@ body {
         
         width: 469px;
         height: 34px;
-        left:226px;
+        left:228px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -276,10 +279,12 @@ body {
         }
 
         .triangle2 {
+          
             width: 5px;
             height: 5px;
             background: url(../images/polygon.png) no-repeat;
-            margin: 0;
+            /* margin: 0; */
+          
         }
         .container {
             position: absolute;
@@ -289,11 +294,19 @@ body {
             flex-direction: row;
             align-items: center;
             justify-content: space-around;
-            left: 13px;
+            left: 4px;
             top: 2px;
         }
-    .main_text  {
+    .header_text{
         position: relative;
+        height: 870px;
+        width: 1170px;
+        margin: 0 auto;
+       
+    }
+    .main_text  {
+       
+        position: absolute;
         Width: 511px;
         Height: 107px;
         color: #FFFFFF;
@@ -302,7 +315,7 @@ body {
         line-height: 36px;
         letter-spacing: 0.05em;
         top: 115px;
-        left: 389px;
+        left: 15px;
     }
     .subtitle_header{
         position: relative;
@@ -313,7 +326,7 @@ body {
         line-height: 24px;
         letter-spacing: 0.04em;
         color: #FFFFFF;
-        top:21px;
+        top:18px;
      }
      .registration {
         position: absolute;

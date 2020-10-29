@@ -23,6 +23,10 @@
     src: url(..//fonts/ProximaNova-Regular.ttf);
     
 }
+@font-face {
+    font-family: 'Google Sans Bold';
+    src: url(..//fonts/GoogleSans-Bold.woff);
+}
 
 
 
@@ -355,18 +359,18 @@ body {
          position: relative;
          width: 1920px;
          height: 1000px;
-         border: 1px solid black;
+         /* border: 1px solid black; */
      }
      .card_coin {
         position: relative;
         width: 1200px;
         height: 346px;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         margin: 0 auto;
         /* display: flex; */
 
      }
-     .bitcoin_card{
+     .bitcoin_card, .litecoin_card, .dash_card {
         position: absolute;
         width: 346px;
         height: 436px;
@@ -377,7 +381,232 @@ body {
         box-shadow: 0px 0px 35px #D5D5E3;
         border-radius: 5px;
      }
+     .logo_card {
+         position: absolute;
+        
+         width: 137px;
+         height: 30px;
+         left: 34px;
+         top: 29px;
+         background: url(../images/bitcoin2.png) no-repeat;
+         font-family: 'Google Sans Bold';
+         font-size: 24px;
+         line-height: 31px;
+         display: flex;
+         align-items: center;
+        justify-content: space-between;
+         color: #333333;
 
+     }
+     .logo_card span {
+        padding-left: 45px;
+     }
+     .description {
+         position: relative;
+         top:90px;
+         width: 300px;
+         height: 92px;
+         left: 1px;
+         
+         /* display: flex;
+         align-items: flex-start;
+         flex-direction: column;
+         justify-content: space-between; */
+     }
+     .hesh, .cost_BTC, .miner, .cost_USD, .profit {
+        
+        font-family: 'Proxima Nova Regular';
+        font-size: 14px;
+        line-height: 24px;
+
+     }
+     .description b {
+        font-size: 20px;
+        line-height: 24px;
+     }
+     .bitcoin_card a {
+        position: absolute;
+        top: 258px;
+        left: 34px;
+        width: 142px;
+        height: 18px;
+        font-family: 'Proxima Nova Bold';
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration: none;
+        color: #2F80ED;
+     }
+
+        .bitcoin_card a::after {
+            content: "";
+            position: absolute;
+            width: 7px;
+            height: 10px;
+            background-image: url(../images/arrow.png);
+            top: 3px;
+            right: -12px;
+
+
+            
+        } 
+
+    
+     .hesh {
+         position: absolute; 
+         top: -9px;
+         left: 35px;
+         
+        }
+    .cost_BTC {
+        position: absolute;
+        top: 48px;
+        left: 33px;
+    }
+    .miner {
+        position: absolute;
+        top: -9px;
+        left: 185px;
+    }
+    .cost_USD {
+        position: absolute;
+        top: 48px;
+        left: 185px;
+    }
+    .profit {
+        position: absolute;
+        top: 106px;
+        left: 35px;
+    }
+.qick_start {
+    position: absolute;
+        width: 276px;
+        height: 42px;
+        left: 34px;
+        bottom: 88px;
+        background: linear-gradient(58.78deg, #2A1C75 -599.37%, #5639B7 81.13%);
+        border-radius: 5px;
+        font-family: 'Proxima Nova Bold';
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0px;
+
+}
+.view {
+    position: absolute;
+        width: 274px;
+        height: 41px;
+        left: 34px;
+        bottom: 35px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 35px #D5D5E3;
+        border: 1px solid #2A1C75;
+        border-radius: 5px;
+        font-family: 'Proxima Nova Bold';
+        font-size: 14px;
+        line-height: 17px;
+        color: #2A1C75;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0px;
+  
+
+}
+.litecoin_card {
+    left: 436px;
+}
+.logo_card_litecoin {
+    position: absolute;
+    width: 137px;
+    height: 33px;
+    left: 34px;
+    top: 29px;
+    background: url(../images/litecoin.png) no-repeat;
+    font-family: 'Google Sans Bold';
+    font-size: 24px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+    color: #333333;
+}
+.logo_card_litecoin span {
+    padding-left: 45px;
+ }
+ .litecoin_card a {
+    position: absolute;
+    top: 258px;
+    left: 34px;
+    width: 142px;
+    height: 18px;
+    font-family: 'Proxima Nova Bold';
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    color: #2F80ED;
+ }
+
+    .litecoin_card a::after {
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 10px;
+        background-image: url(../images/arrow.png);
+        top: 3px;
+        right: -12px;
+
+
+        
+    }
+    .dash_card {
+        left: 837px;
+    }
+    .logo_card_dash{
+        position: absolute;
+        width: 137px;
+        height: 33px;
+        left: 34px;
+        top: 29px;
+        background: url(../images/dash.png) no-repeat;
+        font-family: 'Google Sans Bold';
+        font-size: 24px;
+        line-height: 31px;
+        display: flex;
+        align-items: center;
+       justify-content: space-between;
+        color: #333333;
+    }
+    .logo_card_dash span {
+        padding-left: 45px;
+     }
+     .dash_card a {
+        position: absolute;
+        top: 258px;
+        left: 34px;
+        width: 142px;
+        height: 18px;
+        font-family: 'Proxima Nova Bold';
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration: none;
+        color: #2F80ED;
+     }
+    
+        .dash_card a::after {
+            content: "";
+            position: absolute;
+            width: 7px;
+            height: 10px;
+            background-image: url(../images/arrow.png);
+            top: 3px;
+            right: -12px;
+           }
+         
+     
 
         
 

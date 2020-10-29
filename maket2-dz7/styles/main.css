@@ -36,18 +36,12 @@ body {
    
   
     position: relative;
-    /* width: 1920px; */
-    height: 1005.5px;
-    background: url(../images/back.png) no-repeat;
-    background-size: 100%;
-}
-/* .back2 {
     width: 1920px;
     height: 1005.5px;
-    position: absolute;
-    background: url(../images/back2.png) no-repeat;
-    opacity: 0.9;
-} */
+    background: url(../images/back.png) no-repeat;
+    
+}
+
 
 .headerinfo {
     position: relative;

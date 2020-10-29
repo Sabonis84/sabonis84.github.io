@@ -18,6 +18,13 @@
     font-family: 'Gotham Pro';
     src: url(../fonts/GothamPro-Bold.woff);
 }
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url(..//fonts/ProximaNova-Regular.ttf);
+    
+}
+
+
 
 body {
     background: #E5E5E5;
@@ -25,12 +32,11 @@ body {
 
 
 .header {
-    /* border: 2px solid red; */
+  
     position: relative;
-    /* margin: 0 auto; */
     width: 1920px;
     height: 1005.5px;
-    background: url(../images/back1.png) no-repeat;
+    background: url(../images/back.png) no-repeat;
 }
 .back2 {
     width: 1920px;
@@ -45,49 +51,49 @@ body {
     margin: 0 auto;
     width: 1250px;
     height: 34px;
-    border: 1px solid #000;
+    
 }
 .left_h {
     position: absolute ;
     width: 200px;
     height: 25px;
-    border: 1px solid #000;
+   
     
 }
     .left_h .date, .time {
         position: absolute ;
         width: 100px;
         height: 10px;
-        font-family: 'Proxima Nova Thin';
+        font-family: 'Proxima Nova Regular';
         font-size: 14px;
-        letter-spacing: 1.3px;
         line-height: 17px;
         left: 54px;
-        margin-top: 7px;
+        margin-top: 9px;
         color: #FFFFFF;
     }
     .time{
-        left: 136px;
-        margin-top: 7px;
-        font-family: 'Proxima Nova Bold';
+        left: 138px;
+        margin-top: 9px;
+        font-family: 'Proxima Nova Regular';
     }
     .money {
         position: absolute;
-        width: 474px;
-        height: 28px;
-        border: 1px solid #000;
-        left:223px;
+        
+        width: 469px;
+        height: 34px;
+        left:226px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         font-size: 14px;
-        line-height: 32px;
-        letter-spacing: 1.3px;
+        line-height: 17px;
         color: #FFFFFF;
         font-family: 'Proxima Nova Regular';
-        text-transform: uppercase;        
+            
     }
     .bitcoin {
-        font-family: 'Proxima Nova Bold';
+        /* font-family: 'Proxima Nova Bold'; */
+    
     }
 
     .lang {
@@ -103,7 +109,7 @@ body {
         height: 10px;
         top: 8px;
         left: 90px;
-        font-family: 'Proxima Nova Bold';
+        font-family: 'Proxima Nova Regular';
         font-size: 14px;
         line-height: 11px;
         letter-spacing: 2.3px;
@@ -119,18 +125,27 @@ body {
         left: 162px;
         border-right: 0;
     }
+    .back2 {
+        margin: 0 auto;
+        top: 34px;
+        position: relative;
+        left: 7px;
+        width: 1155px;
+        height: 1px;
+        background: rgba(244, 244, 249, 0.5);
+    }
     .header_nav {
         position: relative;
         margin: 0 auto;
         width: 1300px;
         height: 100px;
-        border: 1px solid black;
+        
         
     }
     .logo {
         position: absolute;
-        top:23px;
-        left: 77px;
+        top:24px;
+        left: 79px;
         width: 41px;
         height: 41px;
         border-radius: 5px;        
@@ -139,7 +154,7 @@ body {
     }
     .sigma {
         position: absolute;
-        top: 31px;
+        top: 33px;
         left: 90px;
         width: 18.28px;
         height: 22.4px;
@@ -147,16 +162,16 @@ body {
     }
     .pool {
     position: absolute;
-    border: 1px solid black;
+    
     width: 143px;
     height: 23px;
     font-size: 21px;
-    line-height: 24px;
+    line-height: 28px;
     letter-spacing: 0.05em;
     font-family: 'Gotham Pro';
     color: #FFFFFF;
     top:30px;
-    left:131px;
+    left:133px;
     }
     .button1 {
     position: absolute;
@@ -164,14 +179,14 @@ body {
     height: 33px;
     border: 1px solid white;
     left: 336px;
-    top: 27px;
+    top: 29px;
     border-radius: 5px;
 
     }
     .bit {
         position: absolute;
         background: url(..//images/bitcoin.png) no-repeat;
-        top: 8px;
+        top: 7px;
         left: 17px;
         width: 16px;
         height: 16px;
@@ -181,7 +196,7 @@ body {
         position: absolute;
         left: 27px;
         width: 61px;
-        height: 35px; 
+        height: 32px; 
         font-family: 'Proxima Nova Bold';
         font-size: 14px;  
         display: flex;
@@ -193,8 +208,182 @@ body {
 
     }
     .triangle {
+        background: url(..//images/traingle.png) no-repeat;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        left: 54px;
+        top: 14px;
+    }
+    .menu {
+        position: absolute;
+        width: 538px;
+        height: 80px;
+        left: 500px;
+        top: 5px;
+        display: flex;
+        flex-direction: row ;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Proxima Nova Bold';
+        font-size: 14px;
+        line-height: 17px;
+        margin-right: 38px;
+
+        
+    }
+    .menu a {
+        color: #FFFFFF;
+        opacity: 0.6;
+        text-decoration: none;
 
     }
+    .menu:last-child {
+        margin-right: 0;
+
+    }
+    .menu a:hover{
+        color: #FFFFFF;
+        opacity: 1;
+        border-bottom: 3px solid white;
+        padding-bottom: 8px;
+               
+    }
+    .button2 {
+        position: absolute;
+        width: 157px;
+        height: 35px;
+        left: 1076px;
+        top: 29px;
+        background: #FFFFFF;
+        border-radius: 5px;
+     
+        
+        }
+
+        .logo_button{
+            background: url(../images/group.png) no-repeat;
+            width: 12px;
+            height: 14px;
+        }
+        .text_button {
+            width: 73px;
+            height: 42px;
+            font-family: 'Proxima Nova Bold';
+            font-size: 14px;
+            line-height: 40px;
+            color: #2A1C75;
+        }
+
+        .triangle2 {
+            width: 5px;
+            height: 5px;
+            background: url(../images/polygon.png) no-repeat;
+            margin: 0;
+        }
+        .container {
+            position: absolute;
+            width: 150px;
+            height: 30px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            left: 13px;
+            top: 2px;
+        }
+    .main_text  {
+        position: relative;
+        Width: 511px;
+        Height: 107px;
+        color: #FFFFFF;
+        font-family: Google Sans;
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: 0.05em;
+        top: 115px;
+        left: 389px;
+    }
+    .subtitle_header{
+        position: relative;
+        width: 628px;
+        height: 96px;
+        font-family: 'Proxima Nova Bold';
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        top:21px;
+     }
+     .registration {
+        position: absolute;
+        width: 220px;
+        height: 40px;
+        left: 0;
+        top: 251px;
+        background: #FFFFFF;
+        border: 1.5px solid #FFFFFF;
+        border-radius: 23px;
+        font-family: 'Proxima Nova Bold';
+        font-size: 14px;
+        line-height: 17px;
+        color: #2A1C75;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0px;
+     }
+     .laptop {
+        position: absolute;
+        width: 629px;
+        height: 496px;
+        background: url(../images/laptop.png) no-repeat;
+        left: 598px;
+        top: -87px;
+
+     }
+     /* main content */
+
+     .main_content {
+         position: relative;
+         width: 1920px;
+         height: 1000px;
+         border: 1px solid black;
+     }
+     .card_coin {
+        position: relative;
+        width: 1200px;
+        height: 346px;
+        border: 1px solid black;
+        margin: 0 auto;
+        /* display: flex; */
+
+     }
+     .bitcoin_card{
+        position: absolute;
+        width: 346px;
+        height: 436px;
+        left: 29px;
+        top: -92px;
+        
+        background: #FFFFFF;
+        box-shadow: 0px 0px 35px #D5D5E3;
+        border-radius: 5px;
+     }
+
+
+        
+
+
+
+
+
+
+    /* .menu::after {
+        content: "";
+        top: 3px;
+        border: 2px solid #FFFFFF;;
+    } */
 
 
 

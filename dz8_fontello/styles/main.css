@@ -18,6 +18,10 @@ body {
 }
 .main1{
     display: flex;
+    align-items: center;
+    justify-content: start;
+
+   
 }
 
 .timer {
@@ -30,23 +34,24 @@ body {
     font-size: 30px;
     border: 1px solid black;
 }
-.animate-spin {
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.animate-spin::after{
+.icon-spin::before {
     font-size: 30px;
-    padding-left: 30px;
     content: '\e832';
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
+
+/* .animate-spin::before{
+    font-size: 30px;
+    content: '\e832';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+} */
 
    
 .time {    

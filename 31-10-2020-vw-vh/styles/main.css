@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+body {
+    background-color: #266b97;
+
+}
+.main {
+    position: relative;
+    background-color: #b9d6ef;
+    height: 100vh;
+    
+}
+
+
+.clouds {
+    position: relative;
+    margin: 0 auto;
+    width: 13vw;
+    height: 114px;
+}
+.clouds > div {
+    position: absolute;
+}
+.cloud1 {
+    left: -252px;
+}
+.cloud2 {
+    right: -293px;
+}
+
+.commingsoon {
+    position: relative;
+    width: 38vw;
+    margin: 0 auto;
+    height: 61px;
+    font-family: 'Raleway', sans-serif;
+}
+.commingsoon > div {
+    position: absolute;
+    font-size: 4vw;
+    line-height: 47px;
+    left: 61px;
+    letter-spacing: 0.3vw;
+    color:white;
+    text-shadow: 2px 4px 0 rgba(0, 0, 0, 0.17);
+}
+.subscribe {
+    position: relative;
+    margin: 0 auto;
+    height: 34px;
+    width: 38vw;
+   
+}
+.subscribe > div {
+    position: absolute;
+    margin-top: 7px;
+    left: 142px;
+    width: 20vw;
+    height: 20px;
+    color: #266b97;
+    font-family: "Houschka Pro";
+    font-size: 0.85vw;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.form {
+    position: relative;
+    margin: 0 auto;
+    height: 45px;
+    width: 37vw;
+    margin: 0 auto;
+  
+    
+}
+
+.maininput {
+    position: absolute;
+    width: 14.6vw;
+    height: 33px;
+    box-shadow: 0 1px 0 #ffffff, inset 0 2px 5px rgba(29, 26, 22, 0.2), inset 0 0 2px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    left: 128px;
+    outline:none;
+    border: none;
+    margin-top: 9px;
+
+}
+
+.maininput::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #808080;
+    padding-left: 11px;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 25px;
+
+}
+      
+
+.megabutton {
+    position: absolute;
+    border-radius: 4px;
+    width: 5.6vw;
+    height: 36px;
+    margin-top: 9px;
+    border: 1px solid #e68e16;
+    background-color: #fab937;
+    left: 378px;
+    text-shadow: 0 1px 1px rgba(29, 26, 22, 0.2);
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8vw;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline:none;
+    
+}
+.futer {
+    position: relative;
+    margin: 0 auto;
+    background-color: #266b97;
+    width: 100vw;
+    height: 100%;
+    
+
+}
+.iceberg {
+    margin: 0 auto;
+    position: relative;
+    width: 39vw;
+    height: 48px;
+    
+}
+.ice {
+   
+    position: absolute;
+    margin-top: -198px;
+    width: 100vw;
+    left: 143px;
+       
+}
+.ship {
+    position: absolute;
+    left: 118px;
+    margin-top: -26px;
+}
+.firsthorizont{
+    position: relative;
+    margin-top: 211px;
+    width: 100vw;
+    height: 4px;
+    background-color: #ddecfa;
+
+}
+.secondhorizont {
+    width: 100vw;
+    height: 9px;
+    background-color: #327dad;
+}
+.elipses {
+    margin: 0 auto;
+    position: relative;
+    height: 100px;
+    width: 24vw;
+    
+
+}
+.days {
+    position: absolute;
+    height: 16px;
+    width: 0vw;
+    left: 40px;
+    z-index: 5;
+    bottom: 0;
+    color:  #f3f3f3;
+    font-family: "Houschka Pro";
+    font-size: 1.46vw;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 16px;
+    text-align: left;
+    text-transform: uppercase;
+    
+
+}
+.elipse1 {
+    position: absolute;
+    border-radius: 50%;
+    margin-top: -97px;
+    width: 4.3vw;
+    height: 70px;
+    background-color: #b9d6ef;
+    left: -4px;
+    line-height: 75px;
+    z-index: 2;
+    color: #266b97;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.4vw;
+    font-weight: 500;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: normal;
+    
+    
+}
+.hours {
+    position: absolute;
+    height: 16px;
+    width: 0vw;
+    left: 144px;
+    z-index: 5;
+    bottom: 0;
+    color:  #f3f3f3;
+    font-family: "Houschka Pro";
+    font-size: 1.46vw;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 16px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.elipse2 {
+    position: absolute;
+    border-radius: 50%;
+    margin-top: -97px;
+    width: 4.3vw;
+    height: 70px;
+    background-color: #b9d6ef;
+    left: 7px;
+    line-height: 75px;
+    z-index: 2;
+    color: #266b97;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.4vw;
+    font-weight: 500;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: normal;
+}
+.mins {
+    position: absolute;
+    height: 16px;
+    width: 0vw;
+    left: 262px;
+    z-index: 5;
+    bottom: 0;
+    color:  #f3f3f3;
+    font-family: "Houschka Pro";
+    font-size: 1.46vw;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 16px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.elipse3 {
+    position: absolute;
+    border-radius: 50%;
+    margin-top: -97px;
+    width: 4.3vw;
+    height: 70px;
+    background-color: #b9d6ef;
+    left: -3px;
+    line-height: 75px;
+    z-index: 2;
+    color: #266b97;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.4vw;
+    font-weight: 500;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: normal;
+}
+

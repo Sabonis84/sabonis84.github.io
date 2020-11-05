@@ -1,0 +1,73 @@
+body {
+    background: #f1f1f1;
+}
+
+.button {
+    position: relative;
+    background-color: #4CAF50;
+    margin-left: 10px;
+    font-size: 28px;
+    color: #FFFFFF;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    
+    
+  }
+  .button::after {
+    content: "";
+    background: #f1f1f1;
+    width: 200px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    display: block;
+    position: absolute;
+    opacity: 0;
+    transition: all 1s linear;
+    
+    
+
+  }
+  .button:hover::after {
+    opacity: 0.4;
+    left: 202px;
+    transition: 1s;
+    height: 95px;
+    width: 198px;
+    
+  } 
+  
+  .button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    
+   }
+
+   .books {
+     padding: 0 10px 0px 0;
+     display: flex;
+     align-items: start;
+     left: 10px;
+     position: relative;
+     top: 70px;
+     /* width: 500px; */
+     height: 200px;
+     /* border: 1px solid black; */
+
+   }
+   .book1, .book2, .book3, .book4, .book5 {
+     width: 100px;
+     height: 200px;
+     border: 1px solid black;
+     margin: 0 10px 0px 0;
+
+   }
+   .books span{
+     
+   }
+    
+  

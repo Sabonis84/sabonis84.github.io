@@ -21,6 +21,6 @@
     border-right: 1px solid black;
     height: 147px;
     left: 216px;
-    animation: anim1 60s ;
+    animation: anim1 60s infinite steps(60, start);
     transform-origin: 100% 100% 0;
 }

@@ -1,7 +1,10 @@
 body {
+  display: inline;
     background: #f1f1f1;
 }
-
+*p {
+  display: block;
+}
 .button {
     position: relative;
     background-color: #4CAF50;
@@ -47,6 +50,10 @@ body {
     
    }
 
+
+
+
+
    .books {
      padding: 0 10px 0px 0;
      display: flex;
@@ -54,20 +61,35 @@ body {
      left: 10px;
      position: relative;
      top: 70px;
-     /* width: 500px; */
+      width: 500px; 
      height: 200px;
-     /* border: 1px solid black; */
+      border: 1px solid black;
 
    }
-   .book1, .book2, .book3, .book4, .book5 {
+   .item {
+     position: absolute;
      width: 100px;
      height: 200px;
      border: 1px solid black;
      margin: 0 10px 0px 0;
 
    }
-   .books span{
+   .books .item p{ 
+    
+    width: 200px; 
+    height: 200px;
+    border: 1px solid black;
+    top:0;
+    
      
+   } 
+   .books .item p:after {
+     content: "";
+    width: 400px; 
+    height: 200px;
+   }
+   .books .item a {
+     text-decoration: none;
    }
     
   

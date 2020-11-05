@@ -1,0 +1,25 @@
+@keyframes anim1{
+    0%{ transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.time {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+    margin: 0 auto;
+    width: 435px;
+    height: 435px;
+    background-image: url(../images/22.png) no-repeat;
+    border: 1px solid black;
+}
+
+.arrow {
+    position: absolute;
+    top: 92px;
+    border-left: 1px solid black;
+    height: 147px;
+    left: 217px;
+    animation: anim1 1s;
+}

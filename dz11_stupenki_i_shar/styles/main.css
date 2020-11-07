@@ -1,0 +1,107 @@
+@keyframes anim1{
+    0%  {left: 0px; top:395px}
+    10% {left: 10px; top:435px;}
+    20% {left: 110px; top:425px;}
+    30% {left: 210px; top:415px;}
+    40% {left: 310px; top:405px;}
+    50%  {left: 410px; top:395px;}
+    60% {left: 410px; top:435px;}
+    70% {left: 310px; top:425px;}
+    80% {left: 210px; top:415px;}
+    90% {left: 110px; top:405px;}
+    100%{left: 10px; top:395px;}
+
+
+
+
+}
+@keyframes st1{
+    0%{ height: 10px;}
+    100% {height: 50px;}
+}
+@keyframes st2{
+    0%{ height: 20px;}
+    100% {height: 40px;}
+}
+@keyframes st4{
+    0%{ height: 40px;}
+    100% {height: 20px;}
+}
+@keyframes st5{
+    0%{ height: 50px;}
+    100% {height: 10px;}
+}
+
+
+
+.block {
+    position: relative;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    background-color: bisque;
+}
+.shar {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50% ;
+    position: absolute;
+    animation: anim1 10s infinite ;
+}
+
+.stupenki {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+    width: 500px;
+    height: 50px;
+    bottom: 0px;
+    
+}
+
+.stupenka1 {
+    
+    width: 100px;
+    height: 10px;
+    border: 1px solid black;
+    animation: st1 5s infinite 0.7s ;
+    
+
+}
+
+.stupenka2 {
+    
+    width: 100px;
+    height: 20px;
+    
+    border: 1px solid black;
+    animation: st2 5s infinite 1.3s;
+}
+.stupenka3 {
+    
+    width: 100px;
+    height: 30px;
+    
+    border: 1px solid black;
+
+}
+.stupenka4 {
+    
+    width: 100px;
+    height: 40px;
+    animation: st4 5s infinite 3.5s;
+    border: 1px solid black;
+
+}
+.stupenka5 {
+   
+    width: 100px;
+    height: 50px;
+    animation: st5 2s infinite 4.5s;
+    border: 1px solid black;
+
+}

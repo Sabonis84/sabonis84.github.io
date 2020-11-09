@@ -1,14 +1,22 @@
 @keyframes anim1{
     0%  {left: 0px; top:395px}
-    10% {left: 10px; top:435px;}
-    20% {left: 110px; top:425px;}
-    30% {left: 210px; top:415px;}
-    40% {left: 310px; top:405px;}
-    50%  {left: 410px; top:395px;}
-    60% {left: 410px; top:435px;}
-    70% {left: 310px; top:425px;}
-    80% {left: 210px; top:415px;}
-    90% {left: 110px; top:405px;}
+    9% {left: 10px; top:435px;}
+    10% {left: 50px; top:395px}
+    19% {left: 110px; top:425px;}
+    20% {left: 150px; top:400px;}
+    29% {left: 210px; top:415px;}
+    30% {left: 250px; top:380px;}
+    39% {left: 310px; top:405px;}
+    40% {left: 350px; top:360px;}
+    50% {left: 410px; top:401px;}
+    59% {left: 410px; top:432px;}
+    60% {left: 350px; top:405px;}
+    69% {left: 310px; top:425px;}
+    70% {left: 250px; top:395px;}
+    79% {left: 210px; top:415px;}
+    80% {left: 150px; top:385px;}
+    89% {left: 110px; top:405px;}
+    90% {left: 50px; top:375px;}
     100%{left: 10px; top:395px;}
 
 
@@ -68,7 +76,7 @@
     width: 100px;
     height: 10px;
     border: 1px solid black;
-    animation: st1 5s infinite 0.7s ;
+    animation: st1 5s infinite 0.8s ;
     
 
 }
@@ -79,7 +87,7 @@
     height: 20px;
     
     border: 1px solid black;
-    animation: st2 5s infinite 1.3s;
+    animation: st2 5s infinite 1.5s;
 }
 .stupenka3 {
     

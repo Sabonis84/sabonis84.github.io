@@ -1,0 +1,22 @@
+.main {
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    .item1011{
+        
+        border: 1px solid black;
+        height: 100px;
+        
+    }
+    .item12 {
+        border: 1px solid black;
+        
+        height: 100px;
+      
+        background-color: chartreuse;
+        
+    }
+}

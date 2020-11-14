@@ -167,6 +167,7 @@
     grid-area: br;
     border: 1px solid black;
     display: grid;
+    grid-template-columns: 1fr;
     
 }
 .blocktext {
@@ -195,8 +196,14 @@
 .footer {
     grid-area: fr;
     border: 1px solid black;
+    height: 10vh;
     display: flex;
-    display: flex;
+    
+    
+    
+    // grid-template-rows: 50px;
+    
+
     justify-content: center;
     align-items: center;
     background: burlywood;

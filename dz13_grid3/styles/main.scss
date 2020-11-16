@@ -1,0 +1,215 @@
+.main {
+    height: 98vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  50px 2fr  2fr 50px;
+    grid-template-areas: 
+    
+     "hd"
+     "ct"
+     "br"
+     "bt"
+     "fr";
+ 
+    
+    
+    div {
+        background: burlywood;
+        // border: 1px solid black;
+    }
+    @media (max-width: 400px) {
+        .blockrow {
+          display: none;
+        }
+    
+}
+.header {
+    grid-area: hd;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+   
+    div {
+        
+        min-width: 400px;
+        flex-grow: 1;
+        border: 1px solid black;
+    }
+    .logo, .nav {
+ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: burlywood;
+        
+         
+      }
+    
+}
+
+
+.aside {
+    grid-area: as;
+   
+    border: 1px solid black;
+    .content2 {
+   
+    border: 1px solid black;
+    display: grid;
+    
+    grid-template-columns: 200px 1fr;
+    grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
+    .div {
+        border: 1px solid black;
+    }
+        
+        border: 1px solid black;
+        grid-template-areas: 
+        "cub3 . "
+        "cub3 cub4"
+        "cub5 cub4"
+        "cub5 cub6"
+        ". cub6";
+    
+   
+        .cub3{
+            grid-area: cub3;
+        }
+        .cub4{
+            grid-area: cub4;
+        }
+        .cub5{
+            grid-area: cub5;
+        }
+        .cub6{
+            grid-area: cub6;
+        }
+
+    }
+    
+    
+    
+
+}
+.article1 {
+    grid-area: ar1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-width: 400px;
+    border: 1px solid black;
+    
+    
+    .block1 {
+        align-self: flex-start;
+        height: 70px;
+        min-width: 400px;
+        border: 1px solid black;
+        .content1{
+            // border: 1px solid black;
+            height: 68px;
+            width: 30vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+           
+            .img1 {
+                width: 40px;
+                height: 40px;
+                border: 1px solid black;
+                border-radius:50% ;
+                text-align: center;
+                line-height: 35px;
+    
+            }
+
+        }
+       
+    }
+    .block2 {
+        align-self: flex-end;
+        justify-content: space-between;
+        border: 1px solid black;
+        height: 70px;
+        min-width: 398px;
+        
+
+        .content2{
+            // border: 1px solid black;
+            height: 68px;
+            width: 30vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row-reverse;
+        }
+
+            
+            .img2 {
+                width: 40px;
+                height: 40px;
+                border: 1px solid black;
+                border-radius:50% ;
+                text-align: center;
+                line-height: 35px;
+    
+            }
+    }
+
+}
+.article2 {
+    grid-area: ar2;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 110px;
+}
+.aside {
+    display: grid;
+
+}
+.blockrow {
+    grid-area: br;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+.blocktext {
+    grid-area: bt;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+   
+    div {
+        
+        min-width: 400px;
+        flex-grow: 1;
+        border: 1px solid black;
+    }
+    .item1, .item2{
+ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: burlywood;
+        
+         
+      }
+}
+.footer {
+    grid-area: fr;
+    border: 1px solid black;
+    height: 10vh;
+    display: flex;
+    
+    
+    
+    // grid-template-rows: 50px;
+    
+
+    justify-content: center;
+    align-items: center;
+    background: burlywood;
+}

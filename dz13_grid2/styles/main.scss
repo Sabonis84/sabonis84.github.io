@@ -1,3 +1,10 @@
+@media (max-width: 400px) {
+    .blockrow {
+    display: none;
+    
+}
+           
+  }
 .main {
     height: 98vh;
     display: grid;
@@ -15,11 +22,7 @@
      "br"
      "bt"
      "fr";
-    @media (max-width: 400px) {
-      .blockrow {
-        display: none;
-        
-    }
+    
 }
 .header {
     grid-area: hd;
@@ -38,17 +41,20 @@
                  
     }
 }
-
 .cont {
-    grid-area: ct;
+    
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows:  1fr 3fr;
+    grid-template-rows:  200px 1fr;
     grid-template-areas: 
-    "as ar1"
+    "as ar"
     "as ar2";
+    overflow-y: scroll;
     
+    
+
 }
+
 .aside {
     grid-area: as;
 }
@@ -61,26 +67,28 @@
 
 .aside {
     grid-area: as;
-    max-height: 300px;
+    // max-height: 300px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    .item3 {grid-area: i3}
-    .item4 {grid-area: i4}
-    .item5 {grid-area: i5}
-    .item6 {grid-area: i6}
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    .item3 {grid-area: i3; overflow: hidden; overflow: scroll;}
+    .item4 {grid-area: i4; overflow: hidden; overflow: scroll;}
+    .item5 {grid-area: i5; overflow: hidden; overflow: scroll;}
+    .item6 {grid-area: i6; overflow: hidden; overflow: scroll;}
     grid-template-areas: 
     "i3 ."
     "i3 i4"
     "i5 i4"
     "i5 i6"
     ". i6";
+     color:red;
+     overflow: scroll;
+     overflow: hidden;
+     
+     
+     
     
-    .div {
-        overflow: hidden;
-        max-height: 150px;
-        font-size: small;
-    }
+    
     
 }
 .article1 {
@@ -153,14 +161,19 @@
 .blockrow {
     grid-area: br;
     
+    max-height: 100px;
+    border: 1px solid black;
+    
    
 }
 .blocktext {
     grid-area: bt;
+        // max-height: 500px;
         padding: 3px;
         border: 1px solid black;
         display: flex;
         flex-wrap: wrap;
+        overflow: hidden;
         
                     
      div {
@@ -182,6 +195,8 @@
 .footer {
     grid-area: fr;
 }
+
+
 
 
 // .header {

@@ -1,6 +1,7 @@
 @media (max-width: 400px) {
   .blockrow {
     display: none;
+    height: 1px;
   }
 }
 
@@ -10,8 +11,8 @@
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 50px 3fr 1fr 2fr 50px;
-      grid-template-rows: 50px 3fr 1fr 2fr 50px;
+  -ms-grid-rows: 50px 3fr 50px 50px 50px;
+      grid-template-rows: 50px 3fr 50px 50px 50px;
       grid-template-areas: "hd" "ct" "br" "bt" "fr";
 }
 

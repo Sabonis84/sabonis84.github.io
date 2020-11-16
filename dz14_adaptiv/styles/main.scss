@@ -1,0 +1,201 @@
+
+body {
+    background:#FFFFFF;}
+.main{
+    
+    width: 1920px;
+    height: 1910px;
+    // border: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    
+  
+}
+
+.nav1 {
+    // border:1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 1920px;
+    height: 36px;
+    background-color: rgba(242, 242, 242, 1);
+    .head {
+        width: 1110px;
+        height: 36px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
+        align-items: center;
+        // border:1px solid black;
+        .item1 {
+        margin-right: 37px;
+        }
+    }
+}
+.nav2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1112px;
+    height: 83px;
+    // border:1px solid black;
+    .cont1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 83px;
+        // border:1px solid black;
+        .form {
+            width: 651px;
+            height: 44px;
+            border:1px solid black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            .obj{
+                width: 467px;
+                border-right: 1px solid black;
+                &::before {
+                   content: "";
+                   width: 10px;
+                   height: 10px;
+                   display: inline-block;
+                    margin-right: 19px;
+                   background-image: url('../images/lupa.png') ;  
+                }  
+            .poisk {
+                width: 174px;
+                // border: 1px solid black;
+                &::before{
+                    content: "";
+                   width: 7px;
+                   height: 7px;
+                   display: inline-block;
+                   margin-right: 7px;
+                   background-color: red;
+                   background-image: url('../images/arrow.png');
+
+                }
+            }
+            }
+
+        }
+        button {
+            width: 218px;
+            height: 44px;
+            // border:1px solid black;
+            width: 218px;
+            background: linear-gradient(245.23deg, #32228A -43.18%, #745ACD 100%), #C4C4C4;
+            border-radius: 3px;
+            margin-left: 19px;
+            color: #FFFFFF;
+            
+        }
+    }
+    
+    .burger {
+        background-image: url('../images/menu-options.png');
+        justify-content: flex-start;
+        
+        width: 26px;
+        height: 19px;
+    }
+}
+.slider {
+    width: 1112px;
+    // border: 1px solid black;
+    height: 333px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    .im1 {
+        background-image: url('../images/phone2.png');
+        // border: 1px solid black;
+        width: 358px;
+        height: 165px;
+        border-radius: 5px;
+    }
+    .im2 {
+        background-image: url('../images/cars2.png');
+        // border: 1px solid black;
+        width: 358px;
+        height: 165px;
+        border-radius: 5px;
+    }
+    .im3 {
+        background-image: url('../images/phone2.png');
+        // border: 1px solid black;
+        width: 358px;
+        height: 165px;
+        border-radius: 5px;
+    }
+}
+@media (max-width: 750px) {
+    .slider {
+        flex-wrap: wrap;
+        max-width: 73vw;
+        overflow: hidden;
+        max-height: 56vh;
+        margin: 5px;
+    }
+}
+.nav3 {
+    width: 1112px;
+    // border: 1px solid black;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .it1 {
+        width: 191px;
+        height: 31px;
+        display: flex;
+        align-items: center;
+    }
+    .cont2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 415px;
+        height: 31px;
+    }
+    .it2, .it3{
+        
+        display: flex;
+        align-items: center;
+        .it3 {
+            margin-left: 93px;
+        }
+    }
+
+}
+.content {
+    border: 1px solid black;
+    width: 1112px;
+    height: 1262px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .cards {
+        margin-bottom: 31px;
+        width: 253px;
+        height: 400px;
+        background-image: url('../images/chears.png');
+    }
+}
+@media (max-width: 750px) {
+    .content {
+        max-width: 73vw;
+        flex-grow: 1;
+    }
+}

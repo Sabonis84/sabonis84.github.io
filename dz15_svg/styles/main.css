@@ -1,0 +1,9 @@
+.icon_svg {
+  height: 512px;
+  width: 512px;
+}
+
+.icon_svg .icon path:hover {
+  fill: green;
+}
+/*# sourceMappingURL=main.css.map */

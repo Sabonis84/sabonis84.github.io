@@ -2,7 +2,7 @@
     height: 98vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:  50px 2fr  2fr 50px;
+    grid-template-rows:  50px 2fr  2fr 1fr 50px;
     grid-template-areas: 
     
      "hd"
@@ -21,6 +21,7 @@
         .blockrow {
           display: none;
         }
+    }
     
 }
 .header {

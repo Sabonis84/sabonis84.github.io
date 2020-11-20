@@ -4,13 +4,19 @@
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 50px 2fr  2fr 50px;
-      grid-template-rows: 50px 2fr  2fr 50px;
+  -ms-grid-rows: 50px 2fr  2fr 1fr 50px;
+      grid-template-rows: 50px 2fr  2fr 1fr 50px;
       grid-template-areas: "hd" "ct" "br" "bt" "fr";
 }
 
 .main div {
   background: burlywood;
+}
+
+@media (max-width: 400px) {
+  .main .blockrow {
+    display: none;
+  }
 }
 
 .header {

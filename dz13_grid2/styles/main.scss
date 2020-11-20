@@ -2,9 +2,7 @@
     .blockrow {
     display: none;
     height: 1px;
-    .blocktext {
-
-    }
+    
     
 }
            
@@ -13,7 +11,7 @@
     height: 98vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:  50px 3fr 50px 50px 50px;
+    grid-template-rows:  50px minmax(200px, 500px) ;
     div {
         background: burlywood;
         border: 1px solid black;
@@ -23,9 +21,9 @@
     
      "hd"
      "ct"
-     "br"
-     "bt"
-     "fr";
+    //  "br"
+    //  "bt"
+    //  "fr";
     
 }
 .header {
@@ -164,7 +162,7 @@
 
 .blockrow {
     grid-area: br;
-    max-height: 100px;
+    height: 100px;
     border: 1px solid black;
     
    

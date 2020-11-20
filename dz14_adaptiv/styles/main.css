@@ -1,26 +1,20 @@
 .main {
   margin: 0 auto;
   min-width: 358px;
-  max-width: 1200px;
+  max-width: 1920px;
   height: 1910px;
 }
 
 .nav1 {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1920px;
   min-width: 358px;
   background-color: #f2f2f2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 .nav1 .head {
-  margin: 0 20px;
-  width: 358px;
+  margin: 0 auto;
+  max-width: 1200px;
   height: 36px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,18 +75,20 @@
       -ms-flex-align: center;
           align-items: center;
   height: 83px;
-  min-width: 278px;
+  min-width: 218px;
 }
 
 .nav2 .cont1 .form {
-  width: 651px;
+  width: 647px;
+  min-width: 358px;
   height: 44px;
   border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -100,6 +96,7 @@
 
 .nav2 .cont1 .form .obj {
   width: 467px;
+  min-width: 300px;
   border-right: 1px solid black;
   padding: 10px;
 }
@@ -136,7 +133,6 @@
 .nav2 .cont1 button {
   width: 218px;
   height: 44px;
-  width: 218px;
   background: linear-gradient(245.23deg, #32228A -43.18%, #745ACD 100%), #C4C4C4;
   border-radius: 3px;
   margin-left: 19px;

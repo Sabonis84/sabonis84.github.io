@@ -1,17 +1,17 @@
 @media (max-width: 400px) {
     .blockrow {
     display: none;
-    height: 1px;
+    
     
     
 }
            
   }
 .main {
-    height: 98vh;
+    height: 75vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:  50px minmax(200px, 500px) ;
+    grid-template-rows:  50px 1fr ;
     div {
         background: burlywood;
         border: 1px solid black;
@@ -120,6 +120,7 @@
                 border-radius:50% ;
                 text-align: center;
                 line-height: 35px;
+                background: url('../images/ship.png')no-repeat;
     
             }
 
@@ -151,6 +152,7 @@
                 border-radius:50% ;
                 text-align: center;
                 line-height: 35px;
+                background: url('../images/22.png')no-repeat;
     
             }
     }
@@ -162,15 +164,16 @@
 
 .blockrow {
     grid-area: br;
-    height: 100px;
+    max-height: 50px;
     border: 1px solid black;
+    background-color: burlywood;
     
    
 }
 .blocktext {
     grid-area: bt;
-       
-        padding: 3px;
+        // min-height: 14vh;
+        // padding: 3px;
         border: 1px solid black;
         display: flex;
         flex-wrap: wrap;
@@ -178,10 +181,10 @@
         
                     
      div {
-        margin: 0 2px 2px 0;                    
+        // margin: 0 2px 2px 0;                    
         min-width: 400px; 
-        flex-grow: 1;
-        // border: 1px solid black;
+         flex-grow: 1;
+        border: 1px solid black;
      }
         .item1, .item2{
                     
@@ -196,6 +199,12 @@
 .footer {
     
     grid-area: fr;
+    background-color: burlywood;
+    min-height: 1000px;
+    border: 1px solid black;
+    background: url('../images/1559370578_1.jpg')no-repeat;
+    background-size: cover;
+    
 }
 
 

@@ -1,0 +1,9 @@
+.flag {
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  border: 2px solid black;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, yellow), color-stop(50%, blue));
+  background: linear-gradient(to top, yellow 50%, blue 50%);
+}
+/*# sourceMappingURL=main.css.map */

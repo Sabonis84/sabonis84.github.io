@@ -5,20 +5,19 @@ const randomInt = (min, max) => {
 };
 
 
-const genArr = (len, min1, max1) => {
-  let arr1 = [];
-  for (let i = 0; i<len; i++) {
-    arr1.push(randomInt(min1, max1));
+const genArr = (rows, columns, min, max) => {
+  let arr = [];
+  for (let i = 0; i < rows; i++) {
+    arr[i] = [];
+    for (let j = 0; j < columns; j++) {
+      arr[i][j] = randomInt(min, max); 
+    };
   };
-  return arr1;
-}
-// console.log(genArr(5, 0, 12));
-
-const arr = [];
-for (let i = 0; i < 5; i++) {
-  arr.push(genArr(5, 0, 12));
-}
+  return arr;
+};
+const arr = genArr(5, 5, 0, 12);
 console.table(arr)
+
 // задание 2
 let sumMain = null;
 for (let i = 0; i < arr.length; i++) {

@@ -9,7 +9,7 @@ butEl.addEventListener('click', (bbb) => {
     for(let i=0; i< arr.length; i++) {
       str = `${str}<input placeholder="${arr[i]}">`
     }
-  document.querySelector('.main').innerHTML = str
+  document.querySelector('.result').innerHTML = str
   // console.dir(textarea);
   console.log(textEl);
 })

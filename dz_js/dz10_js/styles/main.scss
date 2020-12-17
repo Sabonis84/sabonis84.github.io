@@ -1,18 +1,18 @@
 .main {
-    display: inline;
-    // flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    
 }
 button {
     margin-left: 3px;
 }
 input {
-    width: 50px;
+    width: 200px;
     height: 50px;
-    ::placeholder {
-        color: green;
     }
 
-}
+
+
 // .cub {
 //     height: 50px;
 //     width: 50px;

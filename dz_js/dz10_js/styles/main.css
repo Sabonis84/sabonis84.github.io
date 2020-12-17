@@ -1,5 +1,6 @@
 .main {
-  display: inline;
+  width: 500px;
+  height: 500px;
 }
 
 button {
@@ -7,23 +8,7 @@ button {
 }
 
 input {
-  width: 50px;
+  width: 200px;
   height: 50px;
-}
-
-input ::-webkit-input-placeholder {
-  color: green;
-}
-
-input :-ms-input-placeholder {
-  color: green;
-}
-
-input ::-ms-input-placeholder {
-  color: green;
-}
-
-input ::placeholder {
-  color: green;
 }
 /*# sourceMappingURL=main.css.map */

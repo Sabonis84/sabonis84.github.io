@@ -1,17 +1,28 @@
 .main {
+    width: 432px;
+    height: 432px;
     display: flex;
     flex-wrap: wrap;
+    // :nth-child(2n) {
+    //     background-color: black;
+    // }
 }
 .cub {
     height: 50px;
     width: 50px;
-    border: 2px solid blue;
-    margin: 2px;
+    border: 2px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     user-select: none;
+}
+.white {
+    background: white;
+}
+
+.black {
+    background: black;
 }
 
 // .flag{

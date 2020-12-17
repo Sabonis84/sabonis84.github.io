@@ -1,4 +1,6 @@
 .main {
+  width: 432px;
+  height: 432px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,8 +11,7 @@
 .cub {
   height: 50px;
   width: 50px;
-  border: 2px solid blue;
-  margin: 2px;
+  border: 2px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,5 +27,13 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.white {
+  background: white;
+}
+
+.black {
+  background: black;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,11 +1,10 @@
 .main {
+    margin: 0 auto;
     width: 432px;
     height: 432px;
     display: flex;
     flex-wrap: wrap;
-    // :nth-child(2n) {
-    //     background-color: black;
-    // }
+    
 }
 .cub {
     height: 50px;
@@ -19,12 +18,18 @@
 }
 .white {
     background: white;
-}
+   }
 
 .black {
-    background: black;
+    background: grey;
+   }
+.peshkaW, .ladyaW, .horseW, .oficerW, .queenW, .kingW {
+    font-size: 3rem;
 }
 
+.peshkaB, .ladyaB, .horseB, .oficerB, .queenB, .kingB {
+    font-size: 3rem;
+}
 // .flag{
 //     margin: 0 auto;
 //     width: 400px;

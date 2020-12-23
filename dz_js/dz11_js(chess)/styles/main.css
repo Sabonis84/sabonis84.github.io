@@ -31,18 +31,20 @@
 }
 
 .white {
-  background: white;
+  background: #f0caaf;
 }
 
 .black {
-  background: grey;
+  background: #d87c30;
 }
 
 .peshkaW, .ladyaW, .horseW, .oficerW, .queenW, .kingW {
   font-size: 3rem;
+  color: white;
 }
 
 .peshkaB, .ladyaB, .horseB, .oficerB, .queenB, .kingB {
   font-size: 3rem;
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */

@@ -17,18 +17,23 @@
     user-select: none;
 }
 .white {
-    background: white;
+    background: rgb(240, 202, 175);
    }
 
 .black {
-    background: grey;
+    background: rgb(216, 124, 48);
    }
 .peshkaW, .ladyaW, .horseW, .oficerW, .queenW, .kingW {
     font-size: 3rem;
+    color: white;
+   
+
+    
 }
 
 .peshkaB, .ladyaB, .horseB, .oficerB, .queenB, .kingB {
     font-size: 3rem;
+    color: black;
 }
 // .flag{
 //     margin: 0 auto;

@@ -1,0 +1,44 @@
+.main {
+  display: -ms-grid;
+  display: grid;
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+}
+
+input {
+  background-color: blue;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buttons button {
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.mbt {
+  position: absolute;
+  margin-left: 305px;
+  width: 30px;
+  height: 300px;
+  background-color: yellow;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,39 +1,128 @@
-// Задание 1.a
-const arr = [5, 23, -110, 3, 18, 0, 14];
-arr.forEach((elem) => {
-  if (elem % 2 !== 0) {
-    console.log(`Задание 1.a: `, elem)
-  }
-})
+const btnLeftEl = document.querySelector('.btn-left');
+const btnRightEl = document.querySelector('.btn-right');
+const btnColorEl = document.querySelector('.btn-color');
+const elemEl = document.querySelector('.elem');
+const fonarEl = document.querySelector('.fonar');
+elemEl.style.animationPlayState = 'paused';
+console.log(elemEl.style);
+// const currentLeft = getComputedStyle(elemEl).left
 
-// Задание 1.b
-const upArr = arr.map((elem) => {
-  return elem + 20;
-})
-console.log(`Задание 1.b: `, upArr)
-// Задание 1.c
-const positiveArr = arr.filter((elem) => {
-  return elem % 2 !== 0 && elem > 0;
-})
-console.log (`Задание 1.c: `, positiveArr)
-// Задание 1.d
-const res = arr.reduce((sum, elem) => {
-  return sum + elem % 3;
+
+// let timeDuration = parseInt(currentLeft) * 4 / 240;
+// const speed = parseInt(currentLeft) * 4 / 240;
+// console.log(speed)
+// console.log(getComputedStyle(elemEl).left)
+
+
+btnColorEl.addEventListener('click', () => {
+    fonarEl.classList.toggle('color1');
+    fonarEl.classList.toggle('color2');
 });
-console.log (`Задание 1.d: `, res)
-// Задание 1.e
-const poisk = arr.includes(5);
-console.log (`Задание 1.e: `, poisk)
-// Задание 2.f
-const elem1 = arr.shift()
-console.log (`Задание 2.f: `, arr, `удаленный 1-й элемент: `, elem1)
-// Задание 2.g
-const numArr = arr.sort((a, b) => {
-  return a - b
+
+btnLeftEl.addEventListener('click', () => {
+    elemEl.style.left = getComputedStyle(elemEl).left
+    let timeDuration = parseInt(elemEl.style.left) *4 / 240;
+    elemEl.style.animationDuration = `${timeDuration}s`;
+    elemEl.classList.toggle('shift-l');  
+    if(elemEl.style.animationPlayState === 'paused') {
+                elemEl.style.animationPlayState = 'running';
+            } else {
+                elemEl.style.animationPlayState = 'paused'
+            }
+     console.log(timeDuration)       
+     console.log(getComputedStyle(elemEl).left)       
 })
-console.log (`Задание 2.g: `, numArr)
-// Задание 2.h
-const numKrat = arr.some((elem) => {
-  return elem % 5 === 0;
+btnRightEl.addEventListener('click', () => {
+    elemEl.style.left = getComputedStyle(elemEl).left;
+    let timeDuration = (240 - parseInt(elemEl.style.left)) / 240 * 4;
+    elemEl.style.animationDuration = `${timeDuration}s`;
+    elemEl.classList.toggle('shift-r');    
+    if(elemEl.style.animationPlayState === 'paused') {
+                elemEl.style.animationPlayState = 'running';
+            } else {
+                elemEl.style.animationPlayState = 'paused'
+            }
+            console.log(timeDuration)       
+         console.log(getComputedStyle(elemEl).left)    
+   
+})
+        
+
+document.addEventListener('keydown', (ev) => {
+    switch (ev.code) {
+        case 'KeyF':
+            fonarEl.classList.toggle('color1');
+            fonarEl.classList.toggle('color2');
+        break;
+        case 'ArrowLeft':
+            elemEl.style.left = getComputedStyle(elemEl).left;
+            let timeDuration = parseInt(elemEl.style.left) *4 / 240;
+            elemEl.style.animationDuration = `${timeDuration}s`;
+            elemEl.classList.toggle('shift-l');  
+            if(elemEl.style.animationPlayState === 'paused') {
+            elemEl.style.animationPlayState = 'running';
+            } else {
+                elemEl.style.animationPlayState = 'paused'
+            }
+            console.log('Left');
+            break;
+        case 'ArrowRight':
+            elemEl.style.left = getComputedStyle(elemEl).left;
+            let timeDuration2 = (240 - parseInt(elemEl.style.left)) / 240 * 4;
+            elemEl.style.animationDuration = `${timeDuration2}s`;
+            elemEl.classList.toggle('shift-r');  
+            if(elemEl.style.animationPlayState === 'paused') {
+            elemEl.style.animationPlayState = 'running';
+            } else {
+                elemEl.style.animationPlayState = 'paused'
+            }
+            console.log('Right');
+            break;
+
+        
+    }
 });
-console.log (`Задание 2.h: `, numKrat)
+
+
+
+
+
+// btnPlayEl.addEventListener('click', () => {
+//     if(elemEl.style.animationPlayState === 'paused') {
+//         elemEl.style.animationPlayState = 'running';
+//     } else {
+//         elemEl.style.animationPlayState = 'paused'
+//     }
+//     elemEl.style.left = getComputedStyle(elemEl).left;
+// })
+// btnRevEl.addEventListener('click', () => {
+//     if(elemEl.style.animationPlayState === 'paused') {
+//         elemEl.style.animationPlayState = 'running';
+//     } else {
+//         elemEl.style.animationPlayState = 'paused'
+//     }
+    
+// })
+
+
+
+// const refFunc = () => {
+//     elemEl.style.left = getComputedStyle(elemEl).left;
+//     elemEl.classList.toggle('shift-l');
+//     elemEl.classList.toggle('shift-r');
+// };
+
+// btnRevEl.addEventListener('click', refFunc);
+// btnPlayEl.addEventListener('click', refFunc)
+
+// document.addEventListener('keydown', (ev) => {
+//     switch (ev.code) {
+//         case 'KeyF':
+//         console.log('FFFFF');
+//         refFunc();
+//         break;
+//         case 'ArrowLeft':
+//             console.log('Left');
+//             break;
+//     }
+// });

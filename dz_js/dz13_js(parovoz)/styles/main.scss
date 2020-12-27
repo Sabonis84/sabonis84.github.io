@@ -1,0 +1,110 @@
+@keyframes shiftR {
+    0% {
+        // left: 0%;        
+    };
+    100% {
+        left: 240px;
+    }
+};
+@keyframes shiftL {
+    0% {
+        // left: 0%;        
+    };
+    100% {
+        left: 1px;
+    }
+};
+
+.container {
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    position: relative;
+};
+.elem {
+    position: absolute;
+    top:100px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    .fonar {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid black;
+    } 
+    .kol {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid black;
+        background: black;
+    }
+    .koleso1 {
+        
+        position: absolute;
+        top: 49px;
+        left: 0px;
+    }
+    .koleso2 {
+        
+        position: absolute;
+        top: 49px;
+        left: 28px;
+    }
+    
+    
+}
+.color1 {
+    background: red;
+}
+.color2 {
+    background: green;
+}
+.container2 {
+    width: 300px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.btn-left {
+    margin-top: 5px;
+    width: 80px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-right {
+    margin-top: 5px;
+    width: 80px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-color {
+    margin-top: 5px;
+    width: 80px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shift-l {
+    animation: shiftL  4s linear  forwards paused;
+}
+.shift-r {
+    animation: shiftR  4s linear  forwards paused;
+}
+
+

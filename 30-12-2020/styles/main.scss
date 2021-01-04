@@ -1,0 +1,66 @@
+.main {
+    display: grid;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+}
+input {
+    background-color: blue;
+}
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    // width: 1px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+        button {
+        width: 50px;
+        height: 50px;
+        background-color: yellow;
+    }
+
+}
+.green {
+    background-color: green;
+}
+.mbt {
+
+    position: absolute;
+    margin-left: 305px;
+    width: 30px;
+    height: 300px;
+    background-color: yellow;
+}
+
+
+
+
+
+
+// .main {
+//     display: flex;
+//     flex-wrap: wrap;
+// }
+// button {
+//     margin-left: 3px;
+// }
+// .cub {
+//     height: 50px;
+//     width: 50px;
+//     border: 2px solid blue;
+//     margin: 2px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     flex-wrap: wrap;
+//     user-select: none;
+// }
+
+// .flag{
+//     margin: 0 auto;
+//     width: 400px;
+//     height: 400px;
+//     border: 2px solid black;
+//     background: linear-gradient(to top, yellow 50%,  blue 50%);
+// }

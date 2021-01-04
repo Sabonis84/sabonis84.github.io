@@ -5,9 +5,6 @@ const spinEl = document.querySelector('.icon-spin');
 btnStartStopEl.disabled = true
 
 let timeVal;
-const arr = [];
-const str = '';
-let diffTime;
 let id;
 
 const runTimer = () => {

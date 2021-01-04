@@ -143,12 +143,12 @@
 }
 
 .shift-l {
-  -webkit-animation: shiftL  4s linear  forwards paused;
-          animation: shiftL  4s linear  forwards paused;
+  -webkit-animation: shiftL   linear  forwards paused;
+          animation: shiftL   linear  forwards paused;
 }
 
 .shift-r {
-  -webkit-animation: shiftR  4s linear  forwards paused;
-          animation: shiftR  4s linear  forwards paused;
+  -webkit-animation: shiftR   linear  forwards paused;
+          animation: shiftR   linear  forwards paused;
 }
 /*# sourceMappingURL=main.css.map */

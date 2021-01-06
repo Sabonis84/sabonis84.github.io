@@ -6,38 +6,57 @@ btnStartStopEl.disabled = true
 
 let timeVal;
 let id;
+let timerFlag = false;
 
 const runTimer = () => {
-   console.log(Date.now());
-   let currTime = moment();
-   console.log(currTime.format('DD-MM-YYYY HH:mm:ss'));
-    let destTime = moment(`${timeVal}`, 'HH:mm');
+    if(timerFlag) {
+        stopTimerId();
+    } else {
+        timerFlag = true;
+        id = setInterval(() => {
+            spinEl.classList.add('animate-spin')    
+           console.log(Date.now());
+           let currTime = moment();
+           console.log(currTime.format('DD-MM-YYYY HH:mm:ss'));
+            let destTime = moment(`${timeVal}`, 'HH:mm');
+            
+            if (moment(destTime).isBefore(currTime)) {
+                console.log('+1');
+                destTime.add(1, 'd');
+            }
+            
+            diffTime = moment(destTime.diff(currTime)).utc();
+            if (diffTime.isDST()) {
+                difftime.substract(1, 'h');
+            };
+            
+            timerEl.innerHTML = diffTime.format('HH:mm:ss');
+            if (diffTime.format('HH:mm:ss') == '00:00:00') {
+                stopTimerId();
+               
+            }
     
-    if (moment(destTime).isBefore(currTime)) {
-        console.log('+1');
-        destTime.add(1, 'd');
-    }
-    
-    diffTime = moment(destTime.diff(currTime)).utc();
-    if (diffTime.isDST()) {
-        difftime.substract(1, 'h');
-    };
-    
-    timerEl.innerHTML = diffTime.format('HH:mm:ss');
-    if (diffTime.format('HH:mm:ss') == '00:00:00') {
-        clearInterval(id)
-        spinEl.classList.remove('animate-spin')
+
+        }, 1000);
     }
 
 };
 
-const runTimerId = () => {
-    id = setInterval(runTimer, 1000);
-};
 
-btnStartStopEl.addEventListener('click', () => {
-   spinEl.classList.add('animate-spin')
-});
+
+
+const stopTimerId = () => {
+    clearInterval(id)
+    spinEl.classList.remove('animate-spin')
+    timerFlag = false;
+}
+
+
+
+// btnStartStopEl.addEventListener('click', () => {
+//    spinEl.classList.add('animate-spin')
+// //    clearInterval(id)
+// });
 
 
 inputTimeEl.addEventListener('input', (ev) => {
@@ -45,11 +64,11 @@ inputTimeEl.addEventListener('input', (ev) => {
     console.log(ev.target.value);
     if (ev.target.value != "") {
         btnStartStopEl.disabled = false
-        btnStartStopEl.addEventListener('click', runTimerId)
+        btnStartStopEl.addEventListener('click', runTimer)
         
     } else {
         btnStartStopEl.disabled = true
-        btnStartStopEl.addEventListener('click', runTimerId)
+        btnStartStopEl.addEventListener('click', runTimer)
         
     }
 });

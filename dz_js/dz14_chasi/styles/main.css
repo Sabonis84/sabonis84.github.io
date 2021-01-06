@@ -83,17 +83,8 @@ body {
 button {
   width: 200px;
   height: 54px;
-}
-
-button::before {
-  content: '\25b6';
-  display: block;
-  font-size: 30px;
-}
-
-button:active::before {
-  content: '\2389';
-  display: block;
-  font-size: 30px;
+  font-size: 2rem;
+  background: green;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

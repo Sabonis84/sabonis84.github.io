@@ -68,16 +68,19 @@ body {
 button {
     width: 200px;
     height: 54px;
+    font-size: 2rem;;
+    background: green;
+    color: white;
    
 }
-button::before {
-    content: '\25b6'; 
-    display: block;
-    font-size: 30px;
-}
-button:active::before {
-    content: '\2389';
-    display: block;
-    font-size: 30px;
+// button::before {
+//     content: '\25b6'; 
+//     display: block;
+//     font-size: 30px;
+// }
+// button:active::after {
+//     content: '\2389';
+//     display: block;
+//     font-size: 30px;
   
-}
+// }

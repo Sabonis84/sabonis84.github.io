@@ -1,11 +1,11 @@
-const mainEl = document.querySelector('.main')
+const currentTimeEl = document.querySelector('.current-time')
 let id;
 const runTime = () => {
     id = setInterval( () => {
         let time = moment()
         let currTime = time.format('DD-MM-YYYY HH:mm:ss')
         console.log(currTime);
-        mainEl.innerHTML = `<div class="current-time">${currTime}</div>`
+        currentTimeEl.innerHTML = `${currTime}`
     }, 1000);
 };
 runTime();

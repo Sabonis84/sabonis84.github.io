@@ -86,9 +86,6 @@ const getArray = (rows, columns, min, max) => {
   };
   return arr;
 };
-
-const arr = getArray(5, 5, 0, 12)
-console.table(arr)
 /////////////////////////////////////////////////////////
 // копирование 2 мерных массивов
 
@@ -128,9 +125,33 @@ while (playerA > 0 && playerB > 0) {
 
 document.querySelector('.main').innerHTML = str
 ///////////////////////////////////////////////////
+//прорисовка 144 кубиков, при нажатии желтые
+let str = '';
+for (let i = 0; i < 144; i++) {
+  str = `${str} <div class="cub"id=${i}>${i}</div>`
+}
+document.querySelector('.main').innerHTML = str
+document.addEventListener('click', (e) => {
+  console.log(e.target.style.backgroundColor = 'Yellow');
+}) 
+//прописать стили css
+// .main {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+// .cub {
+//   height: 50px;
+//   width: 50px;
+//   border: 2px solid blue;
+//   margin: 2px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex-wrap: wrap;
+//   user-select: none;
+// }
+///////////////////////////////////////////
 
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 
 
 

@@ -98,6 +98,7 @@ mainEl.addEventListener('click', (ev) => {
             arrPlaces[i].occupied = true;
             modalShowRemover();
             renderParkPlaces();
+            refreshBoard();
             btnOkEl.removeEventListener('click', clickBtnOk);
         }
         btnOkEl.addEventListener('click', clickBtnOk);
@@ -115,6 +116,7 @@ mainEl.addEventListener('click', (ev) => {
             arrPlaces[i].occupied = false;
             modalShowRemover();
             renderParkPlaces();
+            refreshBoard();
             btnYesEl.removeEventListener('click', clickBtnYes);
          }
          const clickBtnNo = () => {

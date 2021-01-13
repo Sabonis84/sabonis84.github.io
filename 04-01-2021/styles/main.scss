@@ -1,0 +1,29 @@
+.car-out {
+    position: absolute;
+    // margin-top: calc(100%-300px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+    border: 1px solid black;
+    .message {
+        font-size: 2em;
+        height: 90px;
+        display: flex;
+        align-items: flex-start;
+        // border: 1px solid black;
+        
+    }
+    .container1 {
+    font-size: 1.5em;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+}

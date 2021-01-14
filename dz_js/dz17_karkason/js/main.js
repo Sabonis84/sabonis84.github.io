@@ -1,36 +1,51 @@
-const card1 = 'a';
-const card2 = 'b';
-const card3 = 'c';
-const arrCardTypes = [];
-arrCardTypes.length = 30;
-let count = 0;
-let countA = 0;
-let countB = 0;
-let countC = 0;
+const arrEls = document.querySelectorAll('.arr')
+const typeLeft = 5;
+const arrCardTypes = ['a', 'b', 'c'];
+let startCardDeck = [];
+let shuffledCardDeck = [];
 
 const randomInt = (min, max) => {
     // случайноае число от min до max
-    let rand = min + Math.random() * (max + 1 - min);
-    return Math.floor(rand);
-    };
+    return Math.floor(Math.random() * (max - min + 1) + min)
+  };
+console.log(randomInt(1, 15))
 
-
-const addCard = () => {
-    for ( let i=0; i < arrCardTypes.length; i++) {
-    let x = randomInt(1,3);
-    count +=1
-    console.log(x)
-    if( x === 1 && countA < 10 ) {
-        x = card1;
-        arrCardTypes.push(x)
-    } else if ( x === 2 && countB < 10 ) {
-        x = card2;
-        arrCardTypes.push(x)
-    } else if (x === 3 && countC < 10 ) {
-        x = card3;
-        arrCardTypes.push(x)
+const createCardDeck = () => {
+    let arrTemp = [];
+    for (let i = 0; i < arrCardTypes.length; i++) {
+        for(let j = 0; j < typeLeft; j++) {
+            arrTemp.push(arrCardTypes[i]);
+        }
     }
-      
+    return arrTemp;
 }
+
+
+ 
+
+ const shuffleCardDeck = (arr) => {
+     const arrTemp = [];
+     let randomIndex = null;
+     let randomElem = null;
+     const count = arr.length;
+
+     for (let i = 0; i < count; i++) {
+         randomIndex = randomInt(0, arr.length - 1);
+         randomElem = arr.splice(randomIndex, 1);
+         console.log(randomIndex, randomElem)
+         arrTemp.push(randomElem)
+     };
+     return arrTemp
+} ;
+
+startCardDeck = createCardDeck();
+shuffledCardDeck = shuffleCardDeck(startCardDeck);
+arrEls[0].innerHTML = shuffledCardDeck.join(',');
+
+//генерация игрового поля
+
+let str = '';
+for (let i = 0; i < 64; i++) {
+  str = `${str} <div class="cub"id=${i}></div>`
 }
-console.log (arrCardTypes)
+document.querySelector('.playfield').innerHTML = str

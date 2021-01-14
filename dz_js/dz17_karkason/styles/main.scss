@@ -1,27 +1,58 @@
 
+.main {
+    display: flex;
+    flex-direction: row;
+}
 
-.svetofor1, .svetofor2, .svetofor3 {
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
-    border-radius: 50%;
-   
+.playfield {
     
+    width: 467px;
+    height: 471px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: greenyellow
+};
+.container {
+    
+    font-size: 1.2em;
+    width: 200px;
+    height: 471px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // flex-direction: column;
+    // border: 1px solid black;
+    background: rgb(219, 97, 122);
+
 }
 
-.red {
-    background: red;
-}
-.yellow {
-    background: yellow;
-}
-.green {
-    background: green;
-}
-.color1 {
-    background: white;
-}
-.color2  {
-    background: red;
+.cardfield{
+    height: 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
 }
 
+h3{
+    color:chartreuse;
+}
+.arr{
+    display: none;
+}
+.cub {
+    
+      height: 50px;
+      width: 50px;
+      border: 2px solid blue;
+      margin: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      user-select: none;
+      border-radius: 5px;
+    }

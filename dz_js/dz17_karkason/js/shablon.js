@@ -5,6 +5,13 @@ const randomInt = (min, max) => {
     return Math.floor(rand);
   };
   console.log(randomInt(4, 35))
+
+  // или/////////
+
+  const randomInt = (min, max) => {
+    // случайноае число от min до max
+    return Math.floor(Math.random() * (max - min + 1) + min)
+  };
 //////////////////////////////////////////////
 
 // генератор случайного массива, где len - количество индексов min - минимальное значение max - максимальное значение

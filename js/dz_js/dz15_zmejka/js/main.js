@@ -186,7 +186,7 @@ arrows.addEventListener ("click", (event) => {
         }
     }
     
-    btnBlock(cX, c);
+    btnBlock(cX, cY);
     if(btns.every(arrow => arrow.disabled === true)) {
         field.innerHTML += "<div class=\"game-over\">Game over!</div>";
     }

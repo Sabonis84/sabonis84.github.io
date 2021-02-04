@@ -1,9 +1,14 @@
 const arrEls = document.querySelectorAll('.arr')
 const cubEl = document.querySelector('.main-cub')
+fieldEl = document.querySelector('.playfield')
 const typeLeft = 5;
 const arrCardTypes = ['a', 'b', 'c'];
 let startCardDeck = [];
 let shuffledCardDeck = [];
+let arrField = [];
+
+let size = 8;
+
 
 
 const randomInt = (min, max) => {
@@ -50,15 +55,46 @@ arrEls[0].innerHTML = shuffledCardDeck.join(',');
 // for (let i = 0; i < 64; i++) {
 //   str = `${str} <div class="cub"id=${i}></div>`
 // }
+// fieldEl.innerHTML = str;
 
-for (let i = 0; i < 8; i++) {
-    for (let j = 0; j < 8; j++) {
+// const arrFillZero = () => {
+//     arrField.forEach(el => {
+//         arrFillZero.fill(0)
+//     });
+//     return arrFillZero
+// }
+//  console.log(arrFillZero())
+
+
+
+
+
+
+const render  = () => {
     let str = '';
-    str = `${str} <div class="cub"id=${i}></div>`
-document.querySelector('.playfield').innerHTML = str
-    }
-}
+    count = 0;
+    for (let i = 0; i < size; i++) {
+        arrField[i] = []; 
+        for (let j = 0; j < size; j++) {
+        count += 1;  
+        str = `${str}<div class="cub"id=${count}></div>`
+        arrField[i][j] = `<div class="cub"id=${count}></div>`; 
+       };
+        
+    };
+    
+    fieldEl.innerHTML = str;
+};
+console.log(render())
+console.log(arrField)
+arrField[0][4] = 10;
+console.log(arrField[0][4]);
+
+fieldEl.addEventListener
+
+
+
 
 // добавление карт в main-cub
-// cubEl = shuffledCardDeck
+// cubEl = shuffldiredCardDeck
 
